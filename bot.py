@@ -30,7 +30,7 @@ def save_data(data):
 data = load_data()
 
 # --- [ إعدادات المحرك ] ---
-bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
+bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"), proxy="http://proxy.server:3128")
 dp = Dispatcher()
 executor = ThreadPoolExecutor(max_workers=10) # نظام الخيوط الأفضل للسحابة
 
